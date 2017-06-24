@@ -2,49 +2,49 @@
 // to collect input from the user. The input you collect will be used to
 // generate the story.
 
-var honorific = document.getElementById ('honorific').value;
+var honorific = prompt ('Please enter an honorific title (e.g. Mister or Colonel');
 
-var authorName = document.getElementById ('authorName').value;
+var authorName = prompt ('What is your full name?');
 
-var adjective1 = document.getElementById ('adjective1').value;
+var adjective1 = prompt ('Enter an adjective:');
 
-var vehicle = document.getElementById ('vehicle').value;
+var vehicle = prompt ('Name a vehicle:');
 
-var vehiclePart = document.getElementById ('vehiclePart').value;
+var vehiclePart = prompt ('Name a part of that vehicle:');
 
-var parking = document.getElementById ('parking').value;
+var parking = prompt ('Where will you park it?');
 
-var precious = document.getElementById ('precious').value;
+var precious = prompt ('Name a precious object:');
 
-var noiseMaker = document.getElementById ('noiseMaker').value;
+var noiseMaker = prompt ('What makes noise?');
 
-var crowdBehavior = document.getElementById ('crowdBehavior').value;
+var crowdBehavior = prompt ('Activitiy people do in groups?');
 
-var adjective2 = document.getElementById ('adjective2').value;
+var adjective2 = prompt ('Enter another adjective:');
 
-var adjective3 = document.getElementById ('adjective3').value;
+var adjective3 = prompt ('Enter one more adjective:');
 
-var color = document.getElementById ('color').value;
+var color = prompt ('Name a color:');
 
-var familyMember = document.getElementById ('familyMember').value;
+var familyMember = prompt ('Name a family relationship (e.g. sister, father):');
 
-var organ = document.getElementById ('organ').value;
+var organ = prompt ('Name a organ:');
 
-var bodyPart1 = document.getElementById ('bodyPart1').value;
+var bodyPart1 = prompt ('Name a body part:');
 
-var bodyPart2 = document.getElementById ('bodyPart2').value;
+var bodyPart2 = prompt ('Name another body part:');
 
-var bodyPart3 = document.getElementById ('bodyPart3').value;
+var bodyPart3 = prompt ('Name one more body part:');
 
-var thing = document.getElementById ('thing1').value;
+var thing = prompt ('Enter a thing:');
 
-var thing2 = document.getElementById ('thing2').value;
+var thing2 = prompt ('Enter an thing you give someone you love:');
 
-var thing3 = document.getElementById ('thing3').value;
+var thing3 = prompt ('Enter a thing you give someone you like:');
 
-var adjective4 = document.getElementById ('adjective4').value;
+var adjective4 = prompt ('A adjective to describe your vehicle:');
 
-var adjective5 = document.getElementById('adjective5').value;
+var adjective5 = prompt('Another adjective to describe your vehicle:');
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -53,12 +53,12 @@ var adjective5 = document.getElementById('adjective5').value;
 // The poem we are using has section numbers. Let's allow the user to
 // generate their own.
 
-var userNumber = document.getElementById('userNumber').value;
+var userNumber = prompt('What is your favorite number?');
 
 // change the number that the user submitted.
 var number2 = userNumber *3; 
 var number3 = userNumber / number2 + userNumber;
-document.getElementById('libForm').addEventListener('libForm');
+
 
 // DO NOT EDIT BELOW THIS LINE /////////////////////////////////////////
 //
@@ -101,7 +101,7 @@ var storyText = `
     Walk the ${vehiclePart} my ${honorific} lies,
     Fallen ${adjective2} and ${adjective3}.
 `;
-var storyParagraph = document.getElementById("#madlib-text");
+let storyParagraph = document.querySelector("#madlib-text");
 storyParagraph.innerHTML = storyText;
 
 
