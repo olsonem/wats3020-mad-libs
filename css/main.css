@@ -1,6 +1,17 @@
 /* WATS 3020 Mad Libs Assignment */
 
 body {
-    padding: 1rem;
+    padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
+  }
+header {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 50px
+}
+
+.poem {
+  border: 1px solid black;
+  border-radius: 5px;
 }

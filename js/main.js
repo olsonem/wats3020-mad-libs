@@ -2,49 +2,49 @@
 // to collect input from the user. The input you collect will be used to
 // generate the story.
 
-let honorific = prompt ('Please enter an honorific title (e.g. Mister or Colonel).');
+var honorific = document.getElementById ('honorific').value;
 
-let authorName = prompt ('What is your full name?');
+var authorName = document.getElementById ('authorName').value;
 
-let adjective1 = prompt ('Please enter an adjective:');
+var adjective1 = document.getElementById ('adjective1').value;
 
-let vehicle = prompt ('Please enter a mode of transportation:');
+var vehicle = document.getElementById ('vehicle').value;
 
-let vehiclePart = prompt ('name a part for the mode of transportation you just named:');
+var vehiclePart = document.getElementById ('vehiclePart').value;
 
-let parking = prompt ('Where are you parking?');
+var parking = document.getElementById ('parking').value;
 
-let precious = prompt ('Name a precious object:');
+var precious = document.getElementById ('precious').value;
 
-let noiseMaker = prompt ('What is making that noise?');
+var noiseMaker = document.getElementById ('noiseMaker').value;
 
-let crowdBehavior = prompt ('What do people do together in groups?');
+var crowdBehavior = document.getElementById ('crowdBehavior').value;
 
-let adjective2 = prompt ('Adjective:');
+var adjective2 = document.getElementById ('adjective2').value;
 
-let adjective3 = prompt ('Adjective:');
+var adjective3 = document.getElementById ('adjective3').value;
 
-let color = prompt ('Name a color:');
+var color = document.getElementById ('color').value;
 
-let familyMember = prompt ('Name of a family relationship e.g. sister, father, etc.:');
+var familyMember = document.getElementById ('familyMember').value;
 
-let organ = prompt ('Name a body organ:');
+var organ = document.getElementById ('organ').value;
 
-let bodyPart1 = prompt ('Name a part of your body:');
+var bodyPart1 = document.getElementById ('bodyPart1').value;
 
-let bodyPart2 = prompt ('Name another part of your body:');
+var bodyPart2 = document.getElementById ('bodyPart2').value;
 
-let bodyPart3 = prompt ('Name yet another part of your body:');
+var bodyPart3 = document.getElementById ('bodyPart3').value;
 
-let thing = prompt ('What is that thing?');
+var thing = document.getElementById ('thing1').value;
 
-let thing2 = prompt ('A thing you give a someone you love?');
+var thing2 = document.getElementById ('thing2').value;
 
-let thing3 = prompt ('A thing you give someone you simply like?');
+var thing3 = document.getElementById ('thing3').value;
 
-let adjective4 = prompt ('adjective describing your vehicle?');
+var adjective4 = document.getElementById ('adjective4').value;
 
-let adjective5 = prompt ('another adjective describing your vehicle');
+var adjective5 = document.getElementById('adjective5').value;
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -53,23 +53,23 @@ let adjective5 = prompt ('another adjective describing your vehicle');
 // The poem we are using has section numbers. Let's allow the user to
 // generate their own.
 
-let userNumber = prompt ('What is your favorite number?');
+var userNumber = document.getElementById('userNumber').value;
 
 // change the number that the user submitted.
-let number2 = userNumber *3; 
-let number3 = userNumber / number2 + userNumber;
-
+var number2 = userNumber *3; 
+var number3 = userNumber / number2 + userNumber;
+document.getElementById('libForm').addEventListener('libForm');
 
 // DO NOT EDIT BELOW THIS LINE /////////////////////////////////////////
 //
 // The code below his line handles variable replacement into the HTML file.
 // Please do not edit this code unless you are attempting a stretch goal.
 
-let titleText = `O ${honorific}! My ${honorific}! by <small>${authorName}</small>`;
-let titleHeading = document.querySelector("#madlib-title");
+var titleText = `O ${honorific}! My ${honorific}! by <small>${authorName}</small>`;
+var titleHeading = document.querySelector("#madlib-title");
 titleHeading.innerHTML = titleText;
 
-let storyText = `
+var storyText = `
 
     ${userNumber}
     O ${honorific}! my ${honorific}! our ${adjective1} trip is done;
@@ -101,5 +101,8 @@ let storyText = `
     Walk the ${vehiclePart} my ${honorific} lies,
     Fallen ${adjective2} and ${adjective3}.
 `;
-let storyParagraph = document.querySelector("#madlib-text");
+var storyParagraph = document.getElementById("#madlib-text");
 storyParagraph.innerHTML = storyText;
+
+
+
